@@ -1,0 +1,63 @@
+/* Variáveis, resets e estilos de body/tipografia. */
+/* ARQUIVO: estilos/global.css */
+
+/* Definição de Variáveis CSS (Cores e Fontes) */
+:root {
+    --cor-fundo-principal: #121212; /* Fundo escuro */
+    --cor-texto-principal: #E0E0E0; /* Texto claro */
+    --cor-destaque-azul: #007BFF;  /* Azul primário de destaque */
+    --cor-destaque-hover: #0056b3; /* Azul mais escuro para hover */
+    --cor-card-fundo: #1E1E1E;     /* Fundo de cards/elementos */
+    --cor-borda-suave: #333333;    /* Linhas e bordas suaves */
+
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-mono: 'Space Mono', monospace;
+}
+
+/* Reset Básico (Remove margens e paddings padrão) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho final dos elementos */
+}
+
+/* Estilos de Corpo Global */
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Rolagem suave nativa */
+}
+
+/* Estilos para Títulos */
+h1, h2, h3 {
+    font-weight: 800; /* Extra bold */
+    color: var(--cor-texto-principal);
+}
+
+h2 {
+    font-size: 2.5rem; /* Tamanho do título de seção */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Estilos para Links */
+a {
+    color: var(--cor-texto-principal);
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-destaque-azul);
+}
+
+/* Estilos para o Wrapper principal das Seções */
+section {
+    padding: 6rem 0; /* Padding vertical para separar as seções */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

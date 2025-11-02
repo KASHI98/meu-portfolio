@@ -1,0 +1,130 @@
+/* ====== SEÇÃO DE PROJETOS ====== */
+.secao-projetos {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .secao-projetos h2 {
+    font-size: 2rem;
+    color: var(--cor-destaque-azul);
+    margin-bottom: 3rem;
+  }
+  
+  /* ====== GRADE DE PROJETOS ====== */
+  .grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+  }
+  
+  /* ====== CARTÕES ====== */
+  .cartao-projeto {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--cor-card-fundo);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cartao-projeto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 123, 255, 0.6);
+  }
+  
+  /* ====== IMAGEM DO PROJETO ====== */
+  .imagem-projeto {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--cor-borda-suave);
+  }
+  
+  .imagem-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .cartao-projeto:hover .imagem-projeto img {
+    transform: scale(1.15);
+  }
+  
+  /* ====== OVERLAY / TAG ====== */
+  .overlay {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+  }
+  
+  .tag-tecnologia {
+    color: var(--cor-destaque-azul);
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  /* ====== CONTEÚDO DO CARTÃO ====== */
+  .conteudo-cartao {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .conteudo-cartao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--cor-destaque-azul);
+  }
+  
+  .conteudo-cartao p {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    line-height: 1.5;
+  }
+  
+  /* ====== BOTÕES (opcionais futuramente) ====== */
+  .botoes-projeto {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+  }
+  
+  .btn-link {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--cor-destaque-azul);
+    color: var(--cor-destaque-azul);
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-link:hover {
+    background-color: var(--cor-destaque-azul);
+    color: var(--cor-fundo-principal);
+  }
+  
+  .btn-demo {
+    background-color: var(--cor-destaque-azul);
+    color: var(--cor-fundo-principal);
+  }
+  
+  .btn-demo:hover {
+    background-color: var(--cor-destaque-hover);
+  }
+  

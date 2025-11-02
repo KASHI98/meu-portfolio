@@ -1,0 +1,50 @@
+/* Estilos da classe .cabecalho-principal. */
+/* ARQUIVO: estilos/cabecalho.css */
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--cor-fundo-principal);
+    border-bottom: 1px solid var(--cor-borda-suave);
+    position: sticky; /* Cabeçalho fixo ao rolar */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo do Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: var(--fonte-mono);
+}
+
+.logo span {
+    color: var(--cor-destaque-azul); /* 'DEV' em azul */
+    font-weight: 400;
+}
+
+/* Estilo da Navegação */
+.cabecalho-principal nav a {
+    margin-left: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    position: relative;
+}
+
+/* Efeito de sublinhado animado */
+.cabecalho-principal nav a:not(.btn-cta)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--cor-destaque-azul);
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.cabecalho-principal nav a:not(.btn-cta):hover::after {
+    width: 100%;
+}

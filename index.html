@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos | Full Stack Developer - Portfólio Inovador</title>
+    
+    <link rel="stylesheet" href="principal.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="cabecalho-principal">
+        <div class="logo">Marcos<span>DEV</span></div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato" class="btn-cta">Contato</a>
+        </nav>
+    </header>
+    <section id="hero" class="secao-hero">
+        <div class="conteudo-hero">
+            <h1>Olá, me chamo <span class="destaque-azul">Marcos</span>.</h1>
+            <p class="subtitulo">Programador Full Stack com foco em performance e inovação. Transformando ideias em soluções digitais.</p>
+            <a href="#projetos" class="btn-principal">Ver Projetos</a>
+        </div>
+        <div class="placeholder-imagem-hero">
+            <div class="animacao-trecho-codigo"><img src="" alt="Representação visual de código ou foto de Marcos"></div>
+        </div>
+    </section>
+    <section id="sobre" class="secao-sobre">
+        <h2>Sobre Mim</h2>
+        <div class="conteudo-sobre">
+            <p>Sou um desenvolvedor Full Stack apaixonado por arquitetura de software e novas tecnologias. Especializado em [Ex: React, Node.js, Python, AWS]. Minha missão é construir aplicações escaláveis, seguras e com excelente experiência de usuário.</p>
+            
+            <div class="grade-habilidades">
+                <div class="item-habilidade">Front-end (React/Vue)</div>
+                <div class="item-habilidade">Back-end (Node/Python)</div>
+                <div class="item-habilidade">Databases (SQL/NoSQL)</div>
+            </div>
+        </div>
+    </section>
+    <section id="projetos" class="secao-projetos">
+        <h2>Meus Projetos</h2>
+      
+        <!-- GRADE DE PROJETOS -->
+        <div class="grade-projetos">
+      
+          <!-- PROJETO 1 -->
+          <div class="cartao-projeto">
+            <div class="imagem-projeto">
+              <img src="src/assets/img/Captura de Tela (66).png" alt="Pré-visualização do projeto Sistema de Loja - MVC">
+              <div class="overlay">
+                <span class="tag-tecnologia">Sistema de Loja</span>
+              </div>
+            </div>
+      
+            <div class="conteudo-cartao">
+              <h3>Sistema de Loja - MVC</h3>
+              <p>Aplicação completa para gestão de estoque e vendas. Demonstra habilidades em autenticação JWT e deploy na nuvem.</p>
+            </div>
+          </div>
+      
+          <!-- PROJETO 2 -->
+          <div class="cartao-projeto">
+            <div class="imagem-projeto">
+              <img src="src/assets/img/Captura de Tela (68).png" alt="Pré-visualização do projeto Sistema de Loja - MVC">
+              <div class="overlay">
+                <span class="tag-tecnologia">Lista de tarefas</span>
+              </div>
+            </div>
+      
+            <div class="conteudo-cartao">
+              <h3>Lista de Tarefas</h3>
+              <p>Aplicação prática de organização pessoal que permite criar, editar e excluir tarefas. Desenvolvida com Node.js e interface responsiva em HTML, CSS e JavaScript.</p>
+            </div>
+          </div>
+      
+          <!-- PROJETO 3 (EXEMPLO DE NOVO ITEM) -->
+          <div class="cartao-projeto">
+            <div class="imagem-projeto">
+              <img src="src/assets/img/loja.png" alt="Pré-visualização do projeto">
+              <div class="overlay">
+                <span class="tag-tecnologia">E-commerce</span>
+              </div>
+            </div>
+      
+            <div class="conteudo-cartao">
+              <h3>E-commerce de roupas</h3>
+              <p>E-commerce de roupas com design colorido e criativo, apresentando uma interface moderna e vibrante em tons de amarelo, laranja e azul. O layout destaca uma nova coleção de moda com imagens chamativas e visual responsivo exibido em desktop e mobile. Ideal para portfólio de design web.</p>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+    <section id="contato" class="secao-contato">
+        <h2>Vamos Conversar?</h2>
+        <p>Preencha o formulário abaixo para iniciar uma conversa diretamente no meu WhatsApp. Todas as informações serão enviadas na mensagem inicial!</p>
+
+        <form id="formularioWhatsapp" class="formulario-contato">
+            <div class="grupo-formulario">
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu Nome Completo">
+            </div>
+            <div class="grupo-formulario">
+                <label for="service">Tipo de Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione o tipo de site/serviço</option>
+                    <option value="Landing Page">Landing Page</option>
+                    <option value="Site Institucional">Site Institucional</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Sistema Web Customizado">Sistema Web Customizado</option>
+                    <option value="Outro">Outro (especificar na mensagem)</option>
+                </select>
+            </div>
+            <div class="grupo-formulario">
+                <label for="details">Detalhes Adicionais:</label>
+                <textarea id="detalhes" name="detalhes" rows="4" placeholder="Fale um pouco sobre o projeto que você tem em mente..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-principal btn-whatsapp">
+                Enviar via WhatsApp
+            </button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Marcos. Desenvolvido com <span class="destaque-azul">Código</span> e <span class="destaque-azul">Paixão</span>.</p>
+    </footer>
+    <script src="js/contato-form.js"></script>
+    <script src="js/principal.js"></script>
+</body>
+</html>

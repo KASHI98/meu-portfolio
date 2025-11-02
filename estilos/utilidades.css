@@ -1,0 +1,60 @@
+/* Estilos para botões e classes de utilidade. */
+/* ARQUIVO: estilos/utilidades.css */
+
+/* Botões Reutilizáveis */
+.btn-principal, .btn-cta, .btn-whatsapp {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-transform: uppercase;
+}
+
+/* Botão Principal */
+.btn-principal, .btn-whatsapp {
+    background-color: var(--cor-destaque-azul);
+    color: var(--cor-fundo-principal); /* Texto escuro no fundo azul */
+    border: none;
+}
+
+.btn-principal:hover, .btn-whatsapp:hover {
+    background-color: var(--cor-destaque-hover);
+    transform: translateY(-2px); /* Efeito de leve levantamento */
+}
+
+/* Botão CTA (no header) */
+.btn-cta {
+    background-color: transparent;
+    border: 2px solid var(--cor-destaque-azul);
+    color: var(--cor-destaque-azul);
+    margin-left: 1rem;
+}
+
+.btn-cta:hover {
+    background-color: var(--cor-destaque-azul);
+    color: var(--cor-fundo-principal);
+}
+
+/* Links em Cartões de Projeto */
+.btn-link {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    color: var(--cor-destaque-azul);
+    border: 1px solid var(--cor-destaque-azul);
+    border-radius: 4px;
+}
+
+.btn-link:hover {
+    background-color: var(--cor-destaque-azul);
+    color: var(--cor-fundo-principal);
+}
+
+/* Classes de Destaque */
+.destaque-azul {
+    color: var(--cor-destaque-azul);
+}

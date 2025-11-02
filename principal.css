@@ -1,0 +1,10 @@
+/* ARQUIVO PRINCIPAL: principal.css */
+/* Este arquivo importa todos os módulos de estilo para manter o código organizado. */
+
+@import url('estilos/global.css');
+@import url('estilos/cabecalho.css');
+@import url('estilos/secao-hero.css');
+@import url('estilos/secoes.css'); /* Contém Sobre e Contato */
+@import url('estilos/projetos.css');
+@import url('estilos/rodape.css');
+@import url('estilos/utilidades.css');
