@@ -49,3 +49,27 @@
     height: auto;
     object-fit: cover;
 }
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .secao-hero {
+      flex-direction: column; /* Coloca conteúdo e imagem um abaixo do outro */
+      text-align: center;
+      padding: 40px 15px;
+    }
+  
+    .conteudo-hero {
+      max-width: 100%;
+    }
+  
+    .conteudo-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .conteudo-hero .subtitulo {
+      font-size: 1rem;
+    }
+  
+    .placeholder-imagem-hero {
+      margin-top: 30px;
+    }
+  }
