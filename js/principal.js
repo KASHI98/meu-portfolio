@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (trechoCodigo) {
         // Exemplo: Simplesmente para ilustrar que o script está funcionando.
         console.log("Portfólio carregado! Elemento de animação encontrado.");
-
+A
         // EXEMPLO DE INTERAÇÃO: Adicionar uma classe para iniciar uma animação CSS
         // trechoCodigo.classList.add('iniciar-animacao'); 
     }
